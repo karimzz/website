@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <title>Swiper demo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+  <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+
+  <!-- Demo styles -->
+  <style>
+    html,
+    body {
+      position: relative;
+      height: 100%;
+    }
+
+    body {
+      background: #eee;
+      font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+      font-size: 14px;
+      color: #000;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container{
+        width: 85%;
+    margin: 0 auto;
+    max-width: 100%;
+    }
+
+    .swiper {
+        width: 85%;
+    margin: 0 auto;
+    max-width: 100%;
+    }
+
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .swiper-slide img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .swiper {
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    /* start Event */
+
+.event{
+    padding: 70px 0;
+}
+
+.event .main-title{
+    margin-bottom: 60px;
+}
+
+.event .post{
+    background:#f8f9fa ;
+    display: flex;
+    justify-content: space-between;
+    padding: 18px 15px;
+}
+.event .post .text{
+    margin-left: 30px;
+}
+
+.event .post .text h4{
+    font-weight: 600;
+    font-size: 30px;
+    letter-spacing: 1px;
+}
+
+.event .post .text .details{
+    display: flex;
+    justify-content: space-between;
+    width: 400px;
+    padding: 17px  0;
+    color: #6c757d;
+
+}
+
+.event .post .text p {
+    color: #212529;
+}
+
+.event .post .text button
+{
+    background-color: transparent;
+    border:1px solid #212529 ;
+    padding: 10px 20px;
+    border-radius: 4px;
+    transition: .4s;
+}
+
+.event .post .text button:hover{
+background: var(--background-color);
+color: white;
+}
+
+.event .post .text button .fa-arrow-right-long{
+    transition: .4s;
+
+}
+.event .post .text button:hover .fa-arrow-right-long{
+    animation-name: leftRight ;
+    animation-duration: 1.4s;
+    animation-iteration-count: infinite;
+
+}
+
+
+/* End Event */
+
+
+  </style>
+</head>
+
+<body>
+
+
+    <div class="event">
+        <div class="container swiper-wrapper">
+        <h2 class="main-title">Our Events:</h2>
+            <div class="post swiper-slide">
+                <div class="image">
+                    <img src="./images/event.webp" alt="">
+                </div>
+                <div class="text">
+                    <h4>CIS 7th Generation Recruitment</h4>
+                    <div class="details">
+                        <div class="data">
+                            <i class="fa-solid fa-calendar-days"></i> Mar 5, 2022 - Mar 17, 2022
+                        </div>
+                        <div class="location">
+                            <i class="fa-solid fa-location-dot"></i> Helwan University
+                        </div>
+                    </div>
+                    <p>
+                        مع كل مرحلة جديدة بنمر بيها بيصاحبنا دائمًا شعور خوف ورهبة منها بيمنعنا إننا نستمتع بيها، لكن هل الشعور ده أثره هيفضل موجود لو كنت عارف اكتر عن المرحلة دي وايه احتياجاتك علشان تكون جاهز ليها ؟
+
+                        رحلة جديدة لفضاء سوق العمل في Beyond Earth 2.0 هنتكلم فيها عن مواضيع مختلفة هتأهلك للتجربة دي بشكل أفضل، والّي من خلالها هتفهم اكتر عن سوق العمل وتستفيد من خبرات وتجارب الناس الي موجوده فيه حاليا ، إلى جانب Workshops وتطبيق عملي على بعض الـ Sessions عشان نثبت فهمنا اكتر .
+
+                        مستنيينكم يوم ٢٧ و٢٨ في مبنى CREATIVA في جامعة المنصوره بجانب كلية الفنون الجميلة
+
+                        تقدروا تحجزوا مكان حضوركم من خلال الـ Website الخاص بينا :
+
+                        #MSP Team
+                        #Beyond_Earth
+                    </p>
+                    <button onclick="location.replace(`https://google.com`)">READ MORE <i class="fa-solid fa-arrow-right-long"></i></button>
+                </div>
+                <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-pagination"></div>
+            </div>
+        </div>
+    </div>
+
+
+  <!-- Swiper -->
+  <div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">Slide 1</div>
+      <div class="swiper-slide">Slide 2</div>
+      <div class="swiper-slide">Slide 3</div>
+      <div class="swiper-slide">Slide 4</div>
+      <div class="swiper-slide">Slide 5</div>
+      <div class="swiper-slide">Slide 6</div>
+      <div class="swiper-slide">Slide 7</div>
+      <div class="swiper-slide">Slide 8</div>
+      <div class="swiper-slide">Slide 9</div>
+    </div>
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-pagination"></div>
+  </div>
+
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      slidesPerView: 1,
+      spaceBetween: 30,
+      loop: true,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+  </script>
+</body>
+
+</html>
